@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+*_cert*.json
+ironproof_cobol_cert_generated.py

@@ -1,0 +1,13 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. GEN-MOVE-415.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  WS-SRC               PIC 9(5)V99  VALUE 9650.22.
+       01  WS-DST               PIC 9(5)V99  VALUE ZEROS.
+       01  WS-FACTOR            PIC V9(4)    VALUE 0.0094.
+       01  WS-RESULT            PIC 9(8)V99  VALUE ZEROS.
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           MOVE WS-SRC TO WS-DST
+           COMPUTE WS-RESULT = WS-DST * WS-FACTOR
+           STOP RUN.

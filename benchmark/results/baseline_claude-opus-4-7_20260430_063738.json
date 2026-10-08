@@ -1,0 +1,1004 @@
+{
+  "baseline_experiment": {
+    "timestamp": "2026-04-30T10:37:38.013256+00:00",
+    "model": "claude-opus-4-7",
+    "total_programs": 50,
+    "z3_proved": 32,
+    "errors_found": 12,
+    "results": [
+      {
+        "filename": "arith_07_discount_calc.cbl",
+        "source_category": "hand-written",
+        "num_vars": 9,
+        "z3_provable_vars": 5,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 5,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 6507.538080215454,
+        "z3_time_ms": 47.71733283996582,
+        "error": ""
+      },
+      {
+        "filename": "arith_10_bmi_calc.cbl",
+        "source_category": "hand-written",
+        "num_vars": 8,
+        "z3_provable_vars": 3,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 3,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 5996.442079544067,
+        "z3_time_ms": 95.71361541748047,
+        "error": ""
+      },
+      {
+        "filename": "arith_11_temperature.cbl",
+        "source_category": "hand-written",
+        "num_vars": 6,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 6936.556339263916,
+        "z3_time_ms": 35.20798683166504,
+        "error": ""
+      },
+      {
+        "filename": "arith_14_depreciation.cbl",
+        "source_category": "hand-written",
+        "num_vars": 13,
+        "z3_provable_vars": 6,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 5,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 6454.593658447266,
+        "z3_time_ms": 21.003007888793945,
+        "error": ""
+      },
+      {
+        "filename": "cond_01_if_else_nested.cbl",
+        "source_category": "hand-written",
+        "num_vars": 9,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 8098.7443923950195,
+        "z3_time_ms": 23.249387741088867,
+        "error": ""
+      },
+      {
+        "filename": "cond_05_not_condition.cbl",
+        "source_category": "hand-written",
+        "num_vars": 11,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 7223.7231731414795,
+        "z3_time_ms": 17.019033432006836,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_012_traint.cbl",
+        "source_category": "dscobol",
+        "num_vars": 3,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2233.703851699829,
+        "z3_time_ms": 3.5479068756103516,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_013_validatecheckdigit.cbl",
+        "source_category": "dscobol",
+        "num_vars": 12,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 2,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC",
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "QUOTIENT",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(QUOTIENT)  = 0\n  Python(QUOTIENT) = 11\n  Écart         = -11",
+            "counterexample": {
+              "D5": "0",
+              "D4": "0",
+              "D2": "0",
+              "RESULT": "0",
+              "D3": "0",
+              "D1": "0",
+              "D6": "0",
+              "D7": "0",
+              "CALCRESULT": "0"
+            }
+          },
+          {
+            "var": "SUMOFNUMS",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(SUMOFNUMS)  = 0.5\n  Python(SUMOFNUMS) = 0\n  Écart         = 1/2",
+            "counterexample": {
+              "D5": "0",
+              "D4": "0",
+              "D2": "0",
+              "RESULT": "0",
+              "D3": "1/10",
+              "D1": "0",
+              "D6": "0",
+              "D7": "0",
+              "CALCRESULT": "0"
+            }
+          }
+        ],
+        "llm_time_ms": 4584.343194961548,
+        "z3_time_ms": 387.14146614074707,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_021_bds1001.cbl",
+        "source_category": "dscobol",
+        "num_vars": 21,
+        "z3_provable_vars": 7,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 3,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 17465.089321136475,
+        "z3_time_ms": 8.70966911315918,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_022_bds1002.cbl",
+        "source_category": "dscobol",
+        "num_vars": 12,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 1,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "MOSTPOPULARCOUNT",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(MOSTPOPULARCOUNT)  = 1\n  Python(MOSTPOPULARCOUNT) = 0\n  Écart         = 1",
+            "counterexample": {
+              "SURNAMECOUNT": "1"
+            }
+          }
+        ],
+        "llm_time_ms": 10782.989501953125,
+        "z3_time_ms": 6.404876708984375,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_030_filecalc.cbl",
+        "source_category": "dscobol",
+        "num_vars": 6,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 1,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "INVALS-RESULT",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(INVALS-RESULT)  = 1\n  Python(INVALS-RESULT) = 0\n  Écart         = 1",
+            "counterexample": {
+              "INVALS-RESULT": "1",
+              "INVALS-2": "0",
+              "INVALS-1": "0"
+            }
+          }
+        ],
+        "llm_time_ms": 8070.910692214966,
+        "z3_time_ms": 13.3209228515625,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_032_inspect1.cbl",
+        "source_category": "dscobol",
+        "num_vars": 31,
+        "z3_provable_vars": 3,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 12009.833574295044,
+        "z3_time_ms": 45.98593711853027,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_041_string1.cbl",
+        "source_category": "dscobol",
+        "num_vars": 16,
+        "z3_provable_vars": 3,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 3,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 4737.905025482178,
+        "z3_time_ms": 4.4994354248046875,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_042_string2.cbl",
+        "source_category": "dscobol",
+        "num_vars": 15,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 1,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "LINE-POS",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(LINE-POS)  = 4\n  Python(LINE-POS) = 5\n  Écart         = -1",
+            "counterexample": {
+              "INV-AMT": "0",
+              "BAL-DUE": "0",
+              "AMT-PAID": "0"
+            }
+          }
+        ],
+        "llm_time_ms": 5996.9048500061035,
+        "z3_time_ms": 19.14834976196289,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_075_ods0004.cbl",
+        "source_category": "dscobol",
+        "num_vars": 19,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 1,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "HDR-YR",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(HDR-YR)  = 0\n  Python(HDR-YR) = 1\n  Écart         = -1",
+            "counterexample": {
+              "WS-CURRENT-YEAR": "0",
+              "WS-CURRENT-MONTH": "0",
+              "WS-CURRENT-SECOND": "0",
+              "WS-CURRENT-MINUTE": "0",
+              "WS-CURRENT-MILLISECONDS": "0",
+              "year": "1",
+              "WS-CURRENT-HOURS": "0",
+              "WS-CURRENT-DAY": "0"
+            }
+          }
+        ],
+        "llm_time_ms": 17701.86424255371,
+        "z3_time_ms": 137.61568069458008,
+        "error": ""
+      },
+      {
+        "filename": "dscobol_076_ods0005.cbl",
+        "source_category": "dscobol",
+        "num_vars": 19,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 1,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "HDR-YR",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(HDR-YR)  = 1\n  Python(HDR-YR) = 0\n  Écart         = 1",
+            "counterexample": {
+              "WS-CURRENT-YEAR": "1",
+              "WS-CURRENT-MONTH": "0",
+              "WS-CURRENT-MILLISECONDS": "0",
+              "WS-CURRENT-SECOND": "0",
+              "WS-CURRENT-MINUTE": "0",
+              "WS-CURRENT-HOURS": "0",
+              "WS-CURRENT-DAY": "0"
+            }
+          }
+        ],
+        "llm_time_ms": 11789.215087890625,
+        "z3_time_ms": 7.622957229614258,
+        "error": ""
+      },
+      {
+        "filename": "examples_004_comp_test.cbl",
+        "source_category": "hand-written",
+        "num_vars": 4,
+        "z3_provable_vars": 3,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 1,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "WS-COMP-VAL",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(WS-COMP-VAL)  = 1\n  Python(WS-COMP-VAL) = 0\n  Écart         = 1",
+            "counterexample": {
+              "WS-INPUT": "1"
+            }
+          }
+        ],
+        "llm_time_ms": 4420.862674713135,
+        "z3_time_ms": 4.233598709106445,
+        "error": ""
+      },
+      {
+        "filename": "gen_014_arith.cbl",
+        "source_category": "generated",
+        "num_vars": 7,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2602.0593643188477,
+        "z3_time_ms": 3.1359195709228516,
+        "error": ""
+      },
+      {
+        "filename": "gen_016_arith.cbl",
+        "source_category": "generated",
+        "num_vars": 8,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2635.721445083618,
+        "z3_time_ms": 3.5669803619384766,
+        "error": ""
+      },
+      {
+        "filename": "gen_017_arith.cbl",
+        "source_category": "generated",
+        "num_vars": 8,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2808.333396911621,
+        "z3_time_ms": 4.573345184326172,
+        "error": ""
+      },
+      {
+        "filename": "gen_048_arith.cbl",
+        "source_category": "generated",
+        "num_vars": 5,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2538.546562194824,
+        "z3_time_ms": 2.9823780059814453,
+        "error": ""
+      },
+      {
+        "filename": "gen_102_cond.cbl",
+        "source_category": "generated",
+        "num_vars": 5,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2135.5276107788086,
+        "z3_time_ms": 3.3376216888427734,
+        "error": ""
+      },
+      {
+        "filename": "gen_112_cond.cbl",
+        "source_category": "generated",
+        "num_vars": 5,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2331.3632011413574,
+        "z3_time_ms": 3.308534622192383,
+        "error": ""
+      },
+      {
+        "filename": "gen_120_cond.cbl",
+        "source_category": "generated",
+        "num_vars": 5,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2282.262086868286,
+        "z3_time_ms": 3.3533573150634766,
+        "error": ""
+      },
+      {
+        "filename": "gen_259_verb.cbl",
+        "source_category": "generated",
+        "num_vars": 5,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2533.3282947540283,
+        "z3_time_ms": 3.342866897583008,
+        "error": ""
+      },
+      {
+        "filename": "gen_288_verb.cbl",
+        "source_category": "generated",
+        "num_vars": 5,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2590.5919075012207,
+        "z3_time_ms": 4.506349563598633,
+        "error": ""
+      },
+      {
+        "filename": "gen_309_nest.cbl",
+        "source_category": "generated",
+        "num_vars": 5,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2985.394239425659,
+        "z3_time_ms": 7.309436798095703,
+        "error": ""
+      },
+      {
+        "filename": "gnucobol_019_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 4,
+        "z3_provable_vars": 4,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 4,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC",
+          "OTHER_SEMANTIC",
+          "OTHER_SEMANTIC",
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "RANDOM-ORIGIN-B",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(RANDOM-ORIGIN-B)  = 9.85\n  Python(RANDOM-ORIGIN-B) = 0\n  Écart         = 197/20",
+            "counterexample": {}
+          },
+          {
+            "var": "RANDOM-ORIGIN-D",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(RANDOM-ORIGIN-D)  = 9.85\n  Python(RANDOM-ORIGIN-D) = 0\n  Écart         = 197/20",
+            "counterexample": {}
+          },
+          {
+            "var": "RANDOM-TARGET-B",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(RANDOM-TARGET-B)  = 9.85\n  Python(RANDOM-TARGET-B) = 0\n  Écart         = 197/20",
+            "counterexample": {}
+          },
+          {
+            "var": "RANDOM-TARGET-D",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(RANDOM-TARGET-D)  = 9.85\n  Python(RANDOM-TARGET-D) = 0\n  Écart         = 197/20",
+            "counterexample": {}
+          }
+        ],
+        "llm_time_ms": 5997.284412384033,
+        "z3_time_ms": 14.991521835327148,
+        "error": ""
+      },
+      {
+        "filename": "gnucobol_227_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 3,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 7607.578992843628,
+        "z3_time_ms": 5.669116973876953,
+        "error": ""
+      },
+      {
+        "filename": "gnucobol_303_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 14,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 20149.89924430847,
+        "z3_time_ms": 0.30231475830078125,
+        "error": "z3_verify: invalid syntax (<unknown>, line 1)"
+      },
+      {
+        "filename": "gnucobol_553_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 5,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 1,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "W-DST1",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(W-DST1)  = 123.45\n  Python(W-DST1) = 0\n  Écart         = 2469/20",
+            "counterexample": {
+              "W-DST2": "0"
+            }
+          }
+        ],
+        "llm_time_ms": 4753.779888153076,
+        "z3_time_ms": 4.4708251953125,
+        "error": ""
+      },
+      {
+        "filename": "gnucobol_625_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 7,
+        "z3_provable_vars": 7,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 15939.579486846924,
+        "z3_time_ms": 0.3342628479003906,
+        "error": "z3_verify: invalid syntax (<unknown>, line 1)"
+      },
+      {
+        "filename": "gnucobol_662_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 4,
+        "z3_provable_vars": 4,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 3,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 4115.9467697143555,
+        "z3_time_ms": 7.363080978393555,
+        "error": ""
+      },
+      {
+        "filename": "gnucobol_665_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 12,
+        "z3_provable_vars": 10,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 8,
+        "llm_z3_refuted_vars": 2,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC",
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "DST-FIELD-1",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(DST-FIELD-1)  = 45678\n  Python(DST-FIELD-1) = 8\n  Écart         = 45670",
+            "counterexample": {}
+          },
+          {
+            "var": "DST-FIELD-2",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(DST-FIELD-2)  = -45678\n  Python(DST-FIELD-2) = 8\n  Écart         = -45686",
+            "counterexample": {}
+          }
+        ],
+        "llm_time_ms": 14390.703678131104,
+        "z3_time_ms": 61.000823974609375,
+        "error": ""
+      },
+      {
+        "filename": "gnucobol_754_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 1,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 1587.3298645019531,
+        "z3_time_ms": 2.280712127685547,
+        "error": ""
+      },
+      {
+        "filename": "gnucobol_855_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 10,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 18951.429843902588,
+        "z3_time_ms": 0.2453327178955078,
+        "error": "z3_verify: invalid syntax (<unknown>, line 1)"
+      },
+      {
+        "filename": "gnucobol_926_prog_cob.cbl",
+        "source_category": "gnucobol",
+        "num_vars": 5,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 3494.765281677246,
+        "z3_time_ms": 3.351926803588867,
+        "error": ""
+      },
+      {
+        "filename": "nist_027_ic102a.cbl",
+        "source_category": "nist",
+        "num_vars": 2,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2423.133134841919,
+        "z3_time_ms": 2.5081634521484375,
+        "error": ""
+      },
+      {
+        "filename": "nist_029_ic104a.cbl",
+        "source_category": "nist",
+        "num_vars": 13,
+        "z3_provable_vars": 3,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 4288.704872131348,
+        "z3_time_ms": 2.3682117462158203,
+        "error": ""
+      },
+      {
+        "filename": "nist_030_ic105a.cbl",
+        "source_category": "nist",
+        "num_vars": 2,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 1,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "DN2",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(DN2)  = 5\n  Python(DN2) = 1\n  Écart         = 4",
+            "counterexample": {
+              "DN1": "0"
+            }
+          }
+        ],
+        "llm_time_ms": 2568.90869140625,
+        "z3_time_ms": 4.61268424987793,
+        "error": ""
+      },
+      {
+        "filename": "nist_035_ic110a.cbl",
+        "source_category": "nist",
+        "num_vars": 15,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 1,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 3332.4623107910156,
+        "z3_time_ms": 2.795696258544922,
+        "error": ""
+      },
+      {
+        "filename": "nist_036_ic111a.cbl",
+        "source_category": "nist",
+        "num_vars": 15,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 1,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2601.7637252807617,
+        "z3_time_ms": 0.36144256591796875,
+        "error": ""
+      },
+      {
+        "filename": "nist_038_ic113a.cbl",
+        "source_category": "nist",
+        "num_vars": 13,
+        "z3_provable_vars": 3,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 3,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 5716.935157775879,
+        "z3_time_ms": 25.22134780883789,
+        "error": ""
+      },
+      {
+        "filename": "nist_042_ic117m.cbl",
+        "source_category": "nist",
+        "num_vars": 3,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 2929.668426513672,
+        "z3_time_ms": 1.5115737915039062,
+        "error": ""
+      },
+      {
+        "filename": "nist_045_ic202a.cbl",
+        "source_category": "nist",
+        "num_vars": 6,
+        "z3_provable_vars": 4,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 2,
+        "llm_z3_refuted_vars": 2,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [
+          "OTHER_SEMANTIC",
+          "OTHER_SEMANTIC"
+        ],
+        "counterexamples": [
+          {
+            "var": "DN4",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(DN4)  = 2\n  Python(DN4) = 1\n  Écart         = 1",
+            "counterexample": {
+              "WS2": "1",
+              "DN1": "0",
+              "DN2": "0"
+            }
+          },
+          {
+            "var": "WS2",
+            "details": "Z3 SAT — contre-exemple trouvé!\n  COBOL(WS2)  = 2\n  Python(WS2) = 1\n  Écart         = 1",
+            "counterexample": {
+              "WS2": "1",
+              "DN1": "0",
+              "DN2": "0"
+            }
+          }
+        ],
+        "llm_time_ms": 3981.0328483581543,
+        "z3_time_ms": 6.295442581176758,
+        "error": ""
+      },
+      {
+        "filename": "nist_047_ic204a.cbl",
+        "source_category": "nist",
+        "num_vars": 7,
+        "z3_provable_vars": 2,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 4267.597675323486,
+        "z3_time_ms": 6.461143493652344,
+        "error": ""
+      },
+      {
+        "filename": "nist_057_ic214a.cbl",
+        "source_category": "nist",
+        "num_vars": 1,
+        "z3_provable_vars": 1,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 1,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 1873.3065128326416,
+        "z3_time_ms": 3.1130313873291016,
+        "error": ""
+      },
+      {
+        "filename": "stress_03_decimal_truncation.cbl",
+        "source_category": "hand-written",
+        "num_vars": 13,
+        "z3_provable_vars": 7,
+        "llm_translation_ok": true,
+        "llm_z3_proved": false,
+        "llm_z3_proved_vars": 0,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 1,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 7039.273023605347,
+        "z3_time_ms": 1.1119842529296875,
+        "error": ""
+      },
+      {
+        "filename": "verb_01_add.cbl",
+        "source_category": "hand-written",
+        "num_vars": 13,
+        "z3_provable_vars": 7,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 7,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 6183.696508407593,
+        "z3_time_ms": 22.828102111816406,
+        "error": ""
+      },
+      {
+        "filename": "verb_02_subtract.cbl",
+        "source_category": "hand-written",
+        "num_vars": 14,
+        "z3_provable_vars": 6,
+        "llm_translation_ok": true,
+        "llm_z3_proved": true,
+        "llm_z3_proved_vars": 6,
+        "llm_z3_refuted_vars": 0,
+        "llm_z3_no_match_vars": 0,
+        "error_types": [],
+        "counterexamples": [],
+        "llm_time_ms": 6547.867774963379,
+        "z3_time_ms": 153.26738357543945,
+        "error": ""
+      }
+    ]
+  }
+}

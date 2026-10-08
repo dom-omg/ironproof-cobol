@@ -1,0 +1,14 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. GEN-VERB-259.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  WS-A                 PIC 9(5)V99  VALUE 2938.13.
+       01  WS-B                 PIC 9(5)V99  VALUE 1579.67.
+       01  WS-C                 PIC 9(5)V99  VALUE 2440.30.
+       01  WS-RESULT            PIC 9(8)V99  VALUE ZEROS.
+       01  WS-RESULT2           PIC 9(8)V99  VALUE ZEROS.
+       PROCEDURE DIVISION.
+       MAIN-PARA.
+           SUBTRACT WS-A FROM WS-B GIVING WS-RESULT
+           SUBTRACT WS-C FROM WS-RESULT
+           STOP RUN.
